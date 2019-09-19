@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146520129-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146520129-1');
+</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Title -->
+    <title>MPOne JLD!</title>
+</head>
+<!-- Body -->
+
+<body>
+
+    <!-- Header Block -->
+    <div id="container">
+        <h1 class="headcolr" id="title1">JLD</h1>
+        <h1 class="headcolr" id="title2">Mixed Project One</h1>
+        <button type="button" class="btn btn-outline-warning btn-lg" onclick="myFunction()">Activate Title</button>
+
+
+        <!-- Carousel -->
+        <div id="slide">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://www.iaecconsultants.com/public/images/uk-banner.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://www.flcc.edu/_rwd-branding/computer-sciences/CompSci-BANNER_1.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://www.wit.ie/images/made/images/uploads/Courses_Pics/shutterstock_239270197_1000_300_c1.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--  text block  -->
+    <div class="textblock">
+        <h3>Introduction</h3>
+        <p>Jason Lovell Digital is the name I work under while offering services using a group of skills I have aquired over the years for visual and digital productions. </p>
+        <p>JLD introduces Photography, Graphic design and WordPress abilities to obtain the best product for the client.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- IFRAME website - First Column -->
+            <div class="col">
+                <!-- Website Insert -->
+                <h5>JLD Website</h5>
+                <p><iframe style="width: 100%; height: 675px; overflow: hidden;" src="https://lovelldigital.com" width="100" height="100" scrolling="no">Iframes not supported</iframe><a href="https:lovelldigital.com" target="blank" class="ifTitle">https:lovelldigital.com</a></p>
+            </div>
+
+            <!-- IFRAME website - First Column -->
+            <div class="col">
+                <!-- Website Insert -->
+                <h5>Client Website</h5>
+                <p><iframe style="width: 100%; height: 675px; overflow: hidden;" src="https://cobiandcoco.com" width="100" height="100" scrolling="no">Iframes not supported</iframe><a href="https://cobiandcoco.com" target="blank" class="ifTitle">https:cobiandcoco.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coord Button -->
+    <button id="btn2">Mouse coordinates - Just for fun!</button>
+    <h4 id="coords">Coordinates</h4>
+
+    <div id="container3">
+        <div class="textblock">
+            <h3>This Project's Purpose</h3>
+            <p>I have been extending my passion for the digital world with 'Front End Web Development' and 'coding'. </p>
+            <p>By using HTML, CSS, JavaScript and a selection other resources I have created a basic web page with a little infomation about me and the project, some external links and a few app like component's that can help me and others, <em>'If they wish!'</em>, in maintaining a healthy weight.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- IFRAME website - First Column -->
+            <div class="col">
+                <form name="bmiForm">
+                    <h5>BMI Calculator</h5>
+                    <div class="bmi-calculator">
+                        <h1 style="margin-bottom: 1em;">Calculate your BMI</h1>
+                        <div class="bmi-calculator-weight">
+                            <input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="180" value="60" />
+                            <p style="margin-top: 1.8em;">
+                                WEIGHT:
+                                <input name="Teža" id="inputWeight" type="number" value="60" min="25" max="180" oninput="showValWeight(this.value)" />
+                                <span id="weight"></span> kg
+                            </p>
+                        </div>
+                        <div class="bmi-calculator-height">
+                            <input class="height-slider" name="realheight" id="myHeight" type="range" min="100" max="220" value="160">
+                            <p style="margin-top: 1.8em;">
+                                HEIGHT:
+                                <input name="Višina" id="inputHeight" type="number" value="160" min="100" max="220" oninput="showValHeight(this.value)" />
+                                <span id="height"></span> cm
+                            </p>
+                        </div>
+                        <input class="gumb" type="button" value="Calculate" onclick="calculateBmi()" style="margin-top: 0.5em">
+                        <p style="margin-top: 1em;font-size: 1.2em;">
+                            <strong>Your BMI:</strong>
+                            <span id="yourbmi" style="font-size: 1.2em;margin-left: 8px;"></span>
+                        </p>
+                        <p>
+                            <span id="evaluationMessage"></span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="w-100"></div>
+
+            <!-- WEIGHT CONVERSION -->
+            <div class="container2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center mb-4">Weight Converter</h1>
+                        <form>
+                            <div class="form-group">
+                                <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds">
+                            </div>
+                        </form>
+                        <div id="output">
+                            <div class="card text-white bg-primary mb-3">
+                                <div class="card-block">
+                                    <h4>Stone:</h4>
+                                    <div id="stnOutput"></div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-success mb-3">
+                                <div class="card-block">
+                                    <h4>Grams:</h4>
+                                    <div id="gramsOutput"></div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-danger mb-3">
+                                <div class="card-block">
+                                    <h4>Kilograms:</h4>
+                                    <div id="kgOutput"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="col">-->
+            <div class="container2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center mb-4">Height Converter</h1>
+                        <form>
+                            <div class="form-group">
+                                <input id="inchInput" type="number" class="form-control form-control-lg" placeholder="Enter Inches">
+                            </div>
+                        </form>
+                        <div id="output2">
+                            <div class="card text-white bg-primary mb-3">
+                                <div class="card-block">
+                                    <h4>Feet:</h4>
+                                    <div id="feetOutput2"></div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-success mb-3">
+                                <div class="card-block">
+                                    <h4>Meters:</h4>
+                                    <div id="meterOutput2"></div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-danger mb-3">
+                                <div class="card-block">
+                                    <h4>cm:</h4>
+                                    <div id="cmOutput2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clock Body -->
+    <div class="col"></div>
+
+    <div>
+        <div id="clkBody">
+            <div class="clock">
+                <div class="wrap">
+                    <span class="hour"></span>
+                    <span class="minute"></span>
+                    <span class="second"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="date">Date</h3>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Thank you for visiting my first online fully coded project</h5>
+                <p class="card-text">I am always looking for new projects to build or work on.</p>
+                <p>Please get in touch if you would like to work together or would like my expertise in any form.</p>
+
+                <a href="https://lovelldigital.com/contact" target="blank" class="btn btn-outline-warning btn-lg">Get in touch</a>
+                <p>Jason Lovell &copy;<span id="year">Year</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Source Links -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
